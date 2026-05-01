@@ -82,6 +82,7 @@ int main()
 			plaintext[i] += 32;
 		}
 	}
+	printf("\n=>");
 
 	int keycount = 0; //keycount를 왜쓰나? : 평문에 공백이나 특수문자가 존재하면
 					  //키를 사용하지 않기 때문에 카운트를 건너뛸 새로운 keycount 변수가 필요하다
