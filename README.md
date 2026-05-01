@@ -30,7 +30,7 @@ gcc -o vigenere Vigenere_Cipher.c
 ```bash
 ./vigenere
 ```
-5. 정상적인 실행 예시
+### 5. 정상적인 실행 예시
 ```bash
 KEY를 입력하시오 (알파벳과 공백만 가능합니다) :
 
@@ -43,38 +43,49 @@ wish to be free from myself
 => OMUY XH JW GVEY YZTG XQWGCJ
 ```
 
-[English Version] (.translated by Gemini AI)
+---
 
-This project is a security programming example that implements the Vigenère Cipher, a type of polyalphabetic substitution cipher, using the C language.
-   
-1. [Project Overview]
-   -The Vigenère cipher encrypts plaintext by using a keyword, providing better resistance against frequency analysis compared to simple substitution ciphers.
-   -This program generates a $26 \times 26$ Vigenère table in memory to perform the encryption logic.
-      
-2. [Key Features]
-   -Automatic Table Generation: Dynamically creates an alphabet table for encryption using a 2D array (char vigenere[26][26]) upon execution.
-   -Secure Input Handling: Uses fgets to prevent buffer overflow and includes exception handling for invalid inputs (empty strings, etc.).
-   -Keyword Refinement: Automatically removes spaces and newlines from the user-provided key and standardizes all characters to lowercase.
-   -Key Rotation Logic: If the keyword is shorter than the plaintext, it cycles through the keyword (using Modulo operation) to continue encryption.
-   -Preservation of Special Characters: Spaces and special characters in the plaintext are kept as-is without encryption to maintain readability.
-      
-3. [Encryption Principle]
-   -The program follows these logical steps:Key Processing: Cleans the keyword to consist only of pure alphabetic characters.
-   -Mapping: Maps the plaintext alphabet $P$ and keyword alphabet $K$ to the indices of the Vigenère table.
-   -Result: Outputs the character at the vigenere[K-97][P-97] position.
+# [English Version] (.translated by Gemini AI)
 
-4. [How to Run]
-   You can run the program using the GCC compiler as follows:
-   # Compile
-   gcc -o vigenere Vigenere_Cipher.c
+This project is a security programming example that implements the **Vigenère Cipher**, a type of polyalphabetic substitution cipher, using the C language.
 
-   # Run
-   ./vigenere
+## 1. Project Overview
+* **Vigenère Cipher**: Encrypts plaintext by using a keyword, providing better resistance against frequency analysis compared to simple substitution ciphers.
+* **Memory-based Logic**: This program generates a 26x26 Vigenère table in memory to perform the encryption logic.
 
-5. [Execution Example] (code does not support English)
-   KEY를 입력하시오 (알파벳과 공백만 가능합니다) :
-   secret is beautiful
-   암호화할 평문을 입력하시오 :
-   wish to be free from myself
+## 2. Key Features
+* **Automatic Table Generation**: Dynamically creates an alphabet table for encryption using a 2D array (`char vigenere[26][26]`) upon execution.
+* **Secure Input Handling**: Uses `fgets` to prevent buffer overflow and includes exception handling for invalid inputs (empty strings, etc.).
+* **Keyword Refinement**: Automatically removes spaces and newlines from the user-provided key and standardizes all characters to lowercase.
+* **Key Rotation Logic**: If the keyword is shorter than the plaintext, it cycles through the keyword (using Modulo operation) to continue encryption.
+* **Preservation of Special Characters**: Spaces and special characters in the plaintext are kept as-is without encryption to maintain readability.
 
-   => OMUY XH JW GVEY YZTG XQWGCJ
+## 3. Encryption Principle
+The program follows these logical steps:
+1. **Key Processing**: Cleans the keyword to consist only of pure alphabetic characters.
+2. **Mapping**: Maps the plaintext alphabet $P$ and keyword alphabet $K$ to the indices of the Vigenère table.
+3. **Result**: Outputs the character at the `vigenere[K-97][P-97]` position.
+
+## 4. How to Run
+You can run the program using the GCC compiler as follows:
+
+### Compile
+```bash
+gcc -o vigenere Vigenere_Cipher.c
+```
+###Run
+```bash
+./vigenere
+```
+### 5. Execution Example (code does not support English)
+```bash
+KEY를 입력하시오 (알파벳과 공백만 가능합니다) :
+
+secret is beautiful
+
+암호화할 평문을 입력하시오 :
+
+wish to be free from myself
+
+=> OMUY XH JW GVEY YZTG XQWGCJ
+```
