@@ -31,10 +31,15 @@ gcc -o vigenere Vigenere_Cipher.c
 ./vigenere
 ```
 5. 정상적인 실행 예시
+
 Plaintext
+
 KEY를 입력하시오 (알파벳과 공백만 가능합니다) :
+
 secret is beautiful
+
 암호화할 평문을 입력하시오 :
+
 wish to be free from myself
 
 => OMUY XH JW GVEY YZTG XQWGCJ
