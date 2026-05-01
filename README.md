@@ -73,7 +73,7 @@ You can run the program using the GCC compiler as follows:
 ```bash
 gcc -o vigenere Vigenere_Cipher.c
 ```
-###Run
+### Run
 ```bash
 ./vigenere
 ```
