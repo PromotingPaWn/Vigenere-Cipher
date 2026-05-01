@@ -1,4 +1,4 @@
-<img width="837" height="588" alt="image" src="https://github.com/user-attachments/assets/7597d9f2-2a6c-4d41-a04c-3370e2b76d51" /># Vigenère Cipher Implementation (C)
+# Vigenère Cipher Implementation (C)
 
 이 프로젝트는 다중 치환 암호의 일종인 **비즈네르 암호(Vigenère Cipher)**를 C 언어로 구현한 보안 프로그래밍 예제입니다.
 
